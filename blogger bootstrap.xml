@@ -13,70 +13,46 @@
 		<link href='http://www.blogger.com/openid-server.g' rel='openid.server'/>
 		<link expr:href='data:blog.homepageUrl' rel='openid.delegate'/>
 		<link expr:href='data:blog.url' rel='canonical'/>
-	<b:if cond='data:blog.pageType == &quot;index&quot;'>
-		<title><data:blog.pageTitle/></title>
-	<b:else/>
-	<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
-		<title><data:blog.pageName/> - <data:blog.title/></title>
-	</b:if></b:if>
-	<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
-		<title>Page Not Found - <data:blog.title/></title>
-	</b:if>
-	<b:if cond='data:blog.pageType == &quot;archive&quot;'>
-		<meta content='noindex' name='robots'/>
-	</b:if>
-	<b:if cond='data:blog.searchLabel'>
-		<meta content='noindex,nofollow' name='robots'/>
-	</b:if>
-	<b:if cond='data:blog.isMobile'>
-		<meta content='noindex,nofollow' name='robots'/>
-	</b:if>
-	<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
-		<meta expr:content='data:blog.metaDescription' name='description'/>
-	<b:if cond='data:blog.homepageUrl != data:blog.url'>
-		<meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.pageTitle + &quot;, &quot; + data:blog.title' name='keywords'/>
-	</b:if></b:if>
-	<b:if cond='data:blog.url == data:blog.homepageUrl'>
-		<meta content='YOUR, KEYWORDS, HERE' name='keywords'/></b:if>
+	<b:if cond='data:blog.pageType == &quot;index&quot;'><title><data:blog.pageTitle/></title><b:else/>
+	<b:if cond='data:blog.pageType != &quot;error_page&quot;'><title><data:blog.pageName/> - <data:blog.title/></title></b:if></b:if>
+	<b:if cond='data:blog.pageType == &quot;error_page&quot;'><title>Page Not Found - <data:blog.title/></title></b:if>
+	<b:if cond='data:blog.pageType == &quot;archive&quot;'><meta content='noindex' name='robots'/></b:if>
+	<b:if cond='data:blog.searchLabel'><meta content='noindex,nofollow' name='robots'/></b:if>
+	<b:if cond='data:blog.isMobile'><meta content='noindex,nofollow' name='robots'/></b:if>
+	<b:if cond='data:blog.pageType != &quot;error_page&quot;'><meta expr:content='data:blog.metaDescription' name='description'/>
+	<b:if cond='data:blog.homepageUrl != data:blog.url'><meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.pageTitle + &quot;, &quot; + data:blog.title' name='keywords'/></b:if></b:if>
+	<b:if cond='data:blog.url == data:blog.homepageUrl'><meta content='YOUR, KEYWORDS, HERE' name='keywords'/></b:if>
 		<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
-	<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
-	<link expr:href='&quot;http://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+		<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
+		<link expr:href='&quot;http://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
 	<b:if cond='data:blog.pageType == &quot;item&quot;'>
-	<b:if cond='data:blog.postImageThumbnailUrl'>
-	<link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
-	</b:if></b:if>
+	<b:if cond='data:blog.postImageThumbnailUrl'><link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/></b:if></b:if>
 	<b:if cond='data:blog.url == data:blog.homepageUrl'>
 	<b:if cond='data:blog.pageType == &quot;item&quot;'>
 	<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
-	<b:if cond='data:blog.url'>
-	<meta expr:content='data:blog.url' property='og:url'/>
-	</b:if>
+	<b:if cond='data:blog.url'><meta expr:content='data:blog.url' property='og:url'/></b:if>
 	<meta expr:content='data:blog.title' property='og:site_name'/>
-	<b:if cond='data:blog.pageName'>
-	<meta expr:content='data:blog.pageName' property='og:title'/>
-	</b:if>
-	<meta content='website' property='og:type'/></b:if></b:if></b:if>
-	<b:if cond='data:blog.postImageThumbnailUrl'>
-	<meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
-	<b:else/></b:if>
+	<b:if cond='data:blog.pageName'><meta expr:content='data:blog.pageName' property='og:title'/>
+	</b:if><meta content='website' property='og:type'/></b:if></b:if></b:if>
+	<b:if cond='data:blog.postImageThumbnailUrl'><meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/><b:else/></b:if>
 	<link href='/favicon.ico' rel='icon' type='image/x-icon'/>
-	<link href='https://plus.google.com/GOOGLE+ID/posts' rel='publisher'/>
-	<link href='https://plus.google.com/GOOGLE+ID/about' rel='author'/>
-	<link href='https://plus.google.com/GOOGLE+ID' rel='me'/>
+	<link href='https://plus.google.com/GOOGLE+PothikMasum/posts' rel='publisher'/>
+	<link href='https://plus.google.com/GOOGLE+PothikMasum/about' rel='author'/>
+	<link href='https://plus.google.com/GOOGLE+PothikMasum' rel='me'/>
 	<meta content='GOOGLE-WEBMASTER-CODE' name='google-site-verification'/>
 	<meta content='BING-WEBMASTER-CODE' name='msvalidate.01'/>
 	<meta content='ALEXA-VERIFY-CODE' name='alexaVerifyID'/>
-	<meta content='Chandpur, Bangladesh' name='geo.placename'/>
+	<meta content='Chandpur, Chittagong Division, Bangladesh' name='geo.placename'/>
 	<meta content='Masum Billah' name='Author'/>
 	<meta content='general' name='rating'/>
 	<meta content='Bangladesh' name='geo.country'/>
 	<meta content='en_US' property='og:locale'/>
 	<meta content='en_GB' property='og:locale:alternate'/>
 	<meta content='english' name='language'/>
-	<meta content='https://www.facebook.com/Msubel.np' property='article:author'/>
-	<meta content='https://www.facebook.com/pothiklab.rtml' property='article:publisher'/>
-	<meta content='FACEBOOK-APP-ID' property='fb:app_id'/>
-	<meta content='FACEBOOK-ADMIN-ID' property='fb:admins'/>
+	<meta content='https://www.facebook.com/pothik82.np' property='article:author'/>
+	<meta content='https://www.facebook.com/pothik82.rtml' property='article:publisher'/>
+	<meta content='FACEBOOK-APP-POTHIK82' property='fb:app_pothik82'/>
+	<meta content='FACEBOOK-ADMIN-POTHIK82' property='fb:admins'/>
 	<meta content='@pothikmasum name=' twitter:site'/>
 	<meta content='@pothikmasum' name=' twitter:creator'/>
 	<!-- End of All in One SEO Pack for blogger -->
