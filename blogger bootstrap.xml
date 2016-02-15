@@ -1,0 +1,28 @@
+
+
+
+
+<body>
+  
+  <b:section id='header' class='header' maxwidgets='1' showaddelement='yes'>
+    <b:widget id='Header1' locked='true' title='Testground (Header)' type='Header'/>
+  </b:section>
+  
+  <b:section id='nav' class='nav' maxwidgets='1' showaddelements='yes'>
+    <b:widget id='PageList1' locked='false' title='Pages' type='PageList'/>
+  </b:section>
+  
+  <b:section id='main' class='main' maxwidgets='' showaddelements='yes'>
+    <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog'/>
+  </b:section>
+  
+  <b:section id='sidebar' class='sidebar' maxwidgets='' showaddelements='yes'>
+    <b:widget id='CustomSearch1' locked='false' title='Search' type='CustomSearch'/>
+    <b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive'/>
+  </b:section>
+  
+  <b:section id='footer' class='footer' maxwidgets='' showaddelements='yes'>
+    <b:widget id='Attribution1' locked='false' title='' type='Attribution'/>
+  </b:section>
+  
+</body>
