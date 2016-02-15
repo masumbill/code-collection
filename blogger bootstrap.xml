@@ -3,8 +3,7 @@
 <head>
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto:400,700,900|Merriweather:400,300,700,900' rel='stylesheet' type='text/css'/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<b:include data='blog' name='all-head-content'/>
 	<!-- All in One SEO Pack for blogger -->
 		<meta charset='utf-8'/>
@@ -67,8 +66,8 @@
 	<meta content='GOOGLE-WEBMASTER-CODE' name='google-site-verification'/>
 	<meta content='BING-WEBMASTER-CODE' name='msvalidate.01'/>
 	<meta content='ALEXA-VERIFY-CODE' name='alexaVerifyID'/>
-	<meta content='Sylhet, Bangladesh' name='geo.placename'/>
-	<meta content='YOUR-NAME' name='Author'/>
+	<meta content='Chandpur, Bangladesh' name='geo.placename'/>
+	<meta content='Masum Billah' name='Author'/>
 	<meta content='general' name='rating'/>
 	<meta content='Bangladesh' name='geo.country'/>
 	<meta content='en_US' property='og:locale'/>
@@ -78,8 +77,8 @@
 	<meta content='https://www.facebook.com/pothiklab.rtml' property='article:publisher'/>
 	<meta content='FACEBOOK-APP-ID' property='fb:app_id'/>
 	<meta content='FACEBOOK-ADMIN-ID' property='fb:admins'/>
-	<meta content='@msubelbd' name='twitter:site'/>
-	<meta content='@msubelbd' name='twitter:creator'/>
+	<meta content='@pothikmasum name=' twitter:site'/>
+	<meta content='@pothikmasum' name=' twitter:creator'/>
 	<!-- End of All in One SEO Pack for blogger -->
 
 <b:skin><![CDATA[/*
@@ -94,11 +93,43 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 
 
+
+
+@media only screen and (max-width:768px){
+.post-body {width:auto!important;}
+.related-postbwrap {width:69%;}
+.related-post-item-title {font-size:12px!important;}
+.ad160 {padding:15px;}
+}
+
+@media only screen and (max-width:640px){
+.post-body {width:auto!important;line-height: 1.4; font-size: 12px;}
+.related-postbwrap {width:100%;}
+.ad160 {display:none;}
+.pager-left, .pager-right {width:43%!important;}
+}
+
+@media only screen and (max-width:480px){
+.post-image {float:none;margin-right:0;margin-bottom:8px}
+.post-image img {width:100%!important;}
+.post-info {margin:0;font-size: 10px;margin-bottom: 8px;}
+.author-info, .home-link {display:none;}
+.readmore2 {width:95%;text-align:center;}
+.pager-left, .pager-right {width:100%!important;}
+#blog-pager {overflow:hidden!important;}
+.pager-left {margin-bottom:5px!important;}
+.related-post-style-2 li {width:100%!important}
+.sharepost li {float:none!important;width:initial!important;}
+}
+
+@media screen and (max-width:320px){
+}
+
 ]]></b:skin>
 
 
 
-
+</head>
 <body>
   
   <b:section id='header' class='header' maxwidgets='1' showaddelement='yes'>
